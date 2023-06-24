@@ -1,0 +1,76 @@
+Resimleri dinamik bir şekilde ölçeklendirmek için aşağıdaki faktörlere dikkat etmeniz önemlidir:
+
+1. Flexbox ve Düzgün Yerleştirme: Resmi içeren özel bileşenin konteynerini stilendirirken,
+flexbox ve düzgün yerleştirme tekniklerini kullanarak esnek bir düzen oluşturabilirsiniz. 
+Bu, resmin boyutunu diğer bileşenlerle uyumlu hale getirmenize olanak sağlar.
+
+2. Ölçekleme Modu: React Native'de `resizeMode` özelliği, 
+resmin nasıl ölçekleneceğini belirlemenizi sağlar. 
+Örneğin, `resizeMode="contain"` değeri resmi orijinal boyutunu korurken, resmi tam olarak görülebilecek şekilde boyutlandırır. 
+`resizeMode="cover"` ise resmi tamamen kaplayacak şekilde boyutlandırır. İhtiyaçlarınıza göre uygun ölçekleme modunu seçebilirsiniz.
+
+3. Dinamik Boyutlandırma: Eğer resimlerinizin boyutları dinamik olarak değişebiliyorsa, 
+resim bileşenine uygun boyutları iletmek önemlidir. 
+Bu durumda, resmin boyutunu prop olarak iletebileceğiniz bir `width` ve `height` propunu içeren bir özel bileşen oluşturmanız gerekebilir. 
+Resim bileşeni içinde bu prop değerlerini kullanarak resmin boyutunu dinamik olarak ayarlayabilirsiniz.
+
+4. Uygun Resim Kaynağı: Resimleri gösterirken, resimlerin yüksek çözünürlüklü versiyonlarını kullanmanız önerilir. 
+Böylece resimlerin keskin ve kaliteli görünmesini sağlayabilirsiniz. 
+Ayrıca, resimlerin boyutlarını optimize etmek için uygun sıkıştırma tekniklerini kullanabilirsiniz.
+
+5. Ayarlanabilir Boyutlar: Özel bileşenin içindeki resim için ayarlanabilir boyutlar sağlamak için, 
+resmin boyutunu prop olarak iletebileceğiniz bir `width` ve `height` propunu kullanabilirsiniz. Bu prop değerlerini özel bileşene ileten bir üst bileşen oluşturarak, 
+resmin boyutunu dinamik olarak ayarlayabilirsiniz.
+
+Bu faktörlere dikkat ederek, resimleri dinamik bir şekilde ölçeklendirerek ve uyumlu bir şekilde görüntüleyerek kullanıcı deneyimini iyileştirebilirsiniz. 
+İhtiyaçlarınıza ve projenizin gereksinimlerine göre uygun yaklaşımı seçebilirsiniz.
+
+Tabii, işte resimleri dinamik olarak boyutlandırmak için bir örnek kod:
+
+```jsx
+import React from 'react';
+import { View, Image, StyleSheet } from 'react-native';
+
+const CustomImageComponent = ({ source, width, height }) => {
+  return (
+    <View style={{ width, height }}>
+      <Image source={source} style={styles.image} resizeMode="contain" />
+    </View>
+  );
+};
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <CustomImageComponent
+        source={require('./assets/image.jpg')} // Örnek bir resim kaynağı
+        width={200} // Dinamik olarak belirlenen genişlik
+        height={150} // Dinamik olarak belirlenen yükseklik
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  image: {
+    flex: 1,
+    width: undefined,
+    height: undefined,
+  },
+});
+
+export default App;
+```
+
+Yukarıdaki örnekte, `CustomImageComponent` adında bir özel bileşen oluşturuldu. Bu bileşen, `source`, `width` ve `height` prop'larını alır. `width` ve `height` prop'larını kullanarak resmin boyutunu ayarlar ve `resizeMode="contain"` özelliğiyle resmi ölçekler.
+
+Ana bileşen olan `App` içinde, `CustomImageComponent` bileşeni kullanılarak resim gösterimi gerçekleştirilir. `source` prop'u örnek bir resim kaynağına (örneğin, `require('./assets/image.jpg')`) ayarlanabilir.
+
+Stil tanımlamaları için `StyleSheet` kullanılarak `container` ve `image` stilleri oluşturuldu. `container` stilinde ana bileşenin genişliği ve yüksekliği ayarlandı, `image` stilinde ise resmin tam alanı kaplaması için flex özelliği kullanıldı.
+
+Bu örnekte, resmin boyutunu belirlemek için `width` ve `height` prop'larını kullanabilir ve resmi dinamik olarak boyutlandırabilirsiniz.

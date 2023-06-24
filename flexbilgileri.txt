@@ -1,0 +1,23 @@
+`flex: 1` stil özelliği, bir bileşene esneklik kazandırır ve ekrandaki kullanılabilir boş alanı kaplamasını sağlar.
+
+Bir bileşene `flex: 1` stil özelliği verildiğinde, bu bileşenin diğer bileşenlere göre ne kadar yer kaplayacağı belirlenir. Eğer sadece tek bir bileşene `flex: 1` verilmişse, o bileşen tüm kullanılabilir boş alanı kaplar ve geri kalan bileşenler sıfır alan alır.
+
+Eğer birden fazla bileşene `flex: 1` verilmişse, bu bileşenler arasındaki kullanılabilir boş alan eşit olarak bölüşülür. Örneğin, iki bileşene `flex: 1` verildiğinde, her bir bileşen ekranın yarısını kaplayacaktır. Üç bileşene `flex: 1` verildiğinde, her bir bileşen ekranın üçte birini kaplayacaktır ve böylece eşit genişlikte olacaktır.
+
+Bu şekilde, bileşenlere esneklik kazandırarak, ekran boyutlarına ve içerik miktarına göre dinamik olarak yerleşmelerini sağlayabilirsiniz.
+
+
+Evet, tabii ki! `flex` stil özelliği, bir bileşenin esneklik özelliğini kontrol etmek için kullanılan bir CSS özelliğidir. Bu özellik, bir bileşenin ne kadar yer kaplayacağını ve diğer bileşenlere göre nasıl boyutlanacağını belirlemek için kullanılır.
+
+`flex` değeri, bir sayı veya oran olarak belirtilebilir. Varsayılan değeri `flex: 0`'dır, yani bileşenin boyutu içeriğine göre otomatik olarak ayarlanır ve esnek değildir. Ancak, `flex: 1` veya daha büyük bir değer verildiğinde, bileşenin esnekliği artar ve kullanılabilir boş alanı kaplama yeteneği güçlenir.
+
+İşte `flex` özelliğinin bazı temel kullanımları:
+
+1. `flex: 1`: Bileşenin tüm kullanılabilir boş alanı kaplamasını sağlar. Bu, bileşenin diğer bileşenlere göre daha fazla genişlemesini sağlar.
+2. `flex: 0`: Bileşenin boyutunu içeriğine göre otomatik olarak ayarlar ve esnek olmadığını belirtir.
+3. `flex: 2`: Bileşenin diğer bileşenlere göre iki kat daha fazla alan kaplamasını sağlar. Diğer bileşenlere göre daha büyük bir boyuta sahip olacaktır.
+4. `flex: 0.5`: Bileşenin diğer bileşenlere göre yarı boyutta olmasını sağlar. Diğer bileşenlere göre daha küçük bir alan kaplayacaktır.
+
+`flex` özelliği, genellikle `flexDirection` özelliği ile birlikte kullanılır. `flexDirection` özelliği, bileşenlerin nasıl sıralanacağını (yatay veya dikey) belirlerken, `flex` özelliği ise bileşenlerin nasıl boyutlanacağını kontrol eder.
+
+Esnek bir düzen oluşturmak için `flex` özelliği kullanarak bileşenlerin boyutunu ve dağılımını ayarlayabilirsiniz. Bu sayede ekran boyutlarına göre dinamik bir düzen oluşturabilir ve içerikleri uygun şekilde yerleştirebilirsiniz.

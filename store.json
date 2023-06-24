@@ -1,0 +1,88 @@
+[
+    {
+      "id": 0,
+      "title": "Xiaomi Mi True Wireless Earbuds",
+      "imgURL": "https://m.media-amazon.com/images/I/51uguxa9nYL._AC._SR360,460.jpg",
+      "price": "₺134,77",
+      "inStock": true
+    },
+    {
+      "id": 1,
+      "title": "General Mobile GM 20",
+      "imgURL": "https://m.media-amazon.com/images/I/51lK00mvFaL._AC._SR180,230.jpg",
+      "price": "₺1.810,21",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "title": "Philips 58PUS8505/62 The One",
+      "imgURL": "https://m.media-amazon.com/images/I/71zLCzJcXaL._AC._SR360,460.jpg",
+      "price": "₺6.992,25",
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "title": "LG 49UM7100PLB Ultra HD 4K",
+      "imgURL": "https://m.media-amazon.com/images/I/71gAldY8eGL._AC._SR360,460.jpg",
+      "price": "₺4.614,38",
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "title": "Samsung Galaxy M31 SM-M315F",
+      "imgURL": "https://m.media-amazon.com/images/I/71mUIp9oCXL._AC._SR360,460.jpg",
+      "price": "₺2.995,80",
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "title": "Apple AirPods Series 2",
+      "imgURL": "https://m.media-amazon.com/images/I/51XanmiXw0L._AC._SR360,460.jpg",
+      "price": "₺1.299,00",
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "title": "Lenovo Tab M10 Plus",
+      "imgURL": "https://m.media-amazon.com/images/I/81JR-A35D0L._AC._SR360,460.jpg",
+      "price": "₺2.496,50",
+      "inStock": false
+    },
+    {
+      "id": 7,
+      "title": "Xiaomi Redmi 20000 Mah",
+      "imgURL": "https://images-na.ssl-images-amazon.com/images/I/41vVdTukkgL._AC_SX522_.jpg",
+      "price": "₺134,70",
+      "inStock": false
+    },
+    {
+      "id": 8,
+      "title": "Xiaomi Mijia Smart Home 360",
+      "imgURL": "https://images-na.ssl-images-amazon.com/images/I/31G-rIrW9zL._AC_UL320_SR226,320_.jpg",
+      "price": "₺269,73",
+      "inStock": true
+    },
+    {
+      "id": 9,
+      "title": "Xiaomi Mi Box S 4K Ultra HD",
+      "imgURL": "https://images-na.ssl-images-amazon.com/images/I/31sNKUGwNUL._AC_.jpg",
+      "price": "₺478,53",
+      "inStock": true
+    },
+    {
+      "id": 10,
+      "title": "Haylou Solar LS-5 Smartwatch",
+      "imgURL": "https://images-na.ssl-images-amazon.com/images/I/51kfZ4W9YSL._AC_SX522_.jpg",
+      "price": "₺296,00",
+      "inStock": true
+    },
+    {
+      "id": 11,
+      "title": "iPhone 13",
+      "imgURL": "data:image/jpeg;base64,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",
+      "price": "35.798,50",
+      "inStock": true
+    }
+
+]
+  
